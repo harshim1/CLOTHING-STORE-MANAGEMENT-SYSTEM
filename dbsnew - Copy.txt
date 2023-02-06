@@ -1,0 +1,259 @@
+create database stocks;
+use stocks; 
+	create table women_instock(item_no int primary key, item_name varchar(100) not null, brand_name varchar(100) not null, brandcode int not null, quantity int not null, sold_out int not null cost float not null, material varchar(100) not null, size varchar(50) not null, color varchar(50) not null);
+		insert into women_instock 
+		values(1001, 'TShirt', 'H&M', 66, 13, 700, 'S', 'Red'), 
+	        (1002, 'Shirt', 'Forever21', 75, 20, 850,'L', 'Orange'),
+                (1003, 'Cardigan', 'ZARA', 80, 15, 900, 'L', 'Black'),
+                (1004, 'Sweatshirt', 'H&M', 66, 40, 1000,'M', 'Red'),
+                (1005, 'Sweatshirt', 'ZARA', 80, 18, 1200,'XL', 'Black'),
+                (1006, 'Pullover', 'VeroModa', 95, 25, 1000,'M', 'Blue' ),
+                (1007, 'Hoodie', 'Forever21', 75, 15, 700,'S', 'Red'),
+                (1008, 'Cardigan',  'VeroModa', 95, 26, 800, 'XS','Mustard'),
+                (1009, 'Skirt', 'WestSide', 85, 15, 1500,'M','Olive'),
+                (1010, 'Skirt', 'H&M', 66, 15, 1800,'L', 'Burgandy'),
+                (1011, 'Trousers',  'VeroModa', 95, 20, 2500,'XL', 'NavyBlue'),
+                (1012, 'Pants', 'WestSide', 85, 23, 2000, 'L', 'Black'),
+                (1013, 'DenimPants', 'AND', 77, 40, 1900,'S', 'Blue'),
+                (1014, 'DenimJacket', 'WestSide', 85, 20, 1500,'XL','White' ),
+                (1015, 'DenimJacket', 'H&M', 66, 13, 2000,'L','Blue'),
+                (1016, 'DenimJacket',  'VeroModa', 95, 18, 2200,'M', 'Black'),
+                (1017, 'Trousers', 'AND', 77, 20, 2000,'S','White'),
+                (1018, 'Hoddie', 'Levis',88, 30, 1300,'XS','Burgandy'),
+                (1019, 'Hoodie', 'AND', 77, 20, 1400, 'M','Orange'),
+                (1020, 'Dress', 'WestSide', 85, 15, 3000,'L','Mustard'),
+                (1021, 'Dress',  'VeroModa', 95, 18, 4000,'M','NavyBlue'),
+                (1022, 'Dress',  'VeroModa', 95, 25, 3500,'L','Black'),
+                (1023, 'Dress', 'H&M', 66,, 20, 3000,'XL','Red'),
+                (1024, 'Jacket', 'Levis',88, 10, 3000, 'S','Brown'),
+                (1025, 'Coat', 'Levis',88, 15, 5000,'M','Black');
+                
+        
+	create table men_instock(item_no int primary key, item_name varchar(100) not null, brand_name varchar(100) not null, brandcode int not null, quantity int not null, cost float not null, material varchar(100) not null, size varchar(50) not null, color varchar(50) not null);  
+		insert into men_instock values (2001,:"jeans" ,"levis",88,80,45,1560,'L','BLUE'),
+		insert into men_instock values (2001,:"jeans" ,"levis",88,80,45,1560,'L','BLUE'),
+		insert into men_instock values (2001,:"jeans" ,"levis",88,80,45,1560,'L','BLUE'),
+		insert into men_instock values (2001,:"jeans" ,"levis",88,80,45,1560,'L','BLUE'),
+		
+
+
+create database sales; 
+use sales; 
+	create table instore_men(item_no int primary key, item_name varchar(100) not null, brand_name varchar(100) not null, brandcode int not null, color varchar(50), size varchar(50), date date not null, quantity int, price float, discount float, total_sale float);
+	create table instore_women(item_no int primary key, item_name varchar(100) not null, brand_name varchar(100) not null, brandcode int not null, color varchar(50), size varchar(50), date date not null, quantity int, price float, discount float, total_sale float);
+	create table online_men(item_no int primary key, item_name varchar(100) not null, brand_name varchar(100) not null, brandcode int not null, color varchar(50), size varchar(50), date date not null, quantity int, price float, discount float, total_sale float);
+	create table online_women(item_no int primary key, item_name varchar(100) not null, brand_name varchar(100) not null, brandcode int not null, color varchar(50), size varchar(50), date date not null, quantity int, price float, discount float, total_sale float);
+ 
+create database customers; 
+use customers;
+	create table customerdata(custno int primary key, cust_name varchar(50) not null, cust_address varchar(100), cust_postalcode int, cust_contact int, cust_email varchar(100), num_of_items int, itemcode int, discount float, billing_amt float, payment_mode varchar(50), delivery boolean);
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+create database stocks;
+use stocks; 
+	create table women_instock(item_no int primary key, item_name varchar(100) not null, brand_name varchar(100) not null, brandcode int not null, quantity int not null, sold_out int not null cost float not null, size varchar(50) not null, color varchar(50) not null);
+           		insert into women_instock values(1001, 'TShirt', 'H&M', 66, 15,10, 700, "S", "Red");
+	    	insert into women_instock values (1002, '"Shirt", "Forever21", 75, 20, 15, 850,"L", "Orange");
+        		insert into women_instock values (1003, "Cardigan", "ZARA", 80, 15, 10, 900, "L", "Black");
+        		insert into women_instock values (1004, "Sweatshirt", "H&M", 66, 40,30, 1000, "M", "Red");
+        		insert into women_instock values (1005, "Sweatshirt", "ZARA", 80, 40, 20, 1200,"XL", "Black");
+        		insert into women_instock values (1006, "Pullover", "VeroModa", 95, 25,20, 1000,"M", "Blue" );
+        		insert into women_instock values (1007, "Hoodie", "Forever21", 75, 15, 15, 700,"S", "Red");
+        		insert into women_instock values (1008, "Cardigan",  "VeroModa", 95, 35, 30, 800, "XS","Mustard");
+        		insert into women_instock values (1009, "Skirt", "WestSide", 85, 15, 10, 1500,"M","Olive");
+        		insert into women_instock values (1010, "Skirt", "H&M", 66, 20, 15, 1800,"L", "Burgandy");
+        		insert into women_instock values (1011, "Trousers",  "VeroModa", 95, 20, 15, 2500,"XL", "NavyBlue");
+        		insert into women_instock values (1012, "Pants", "WestSide", 85, 45, 30, 2000, "L", "Black");
+        		insert into women_instock values (1013, "DenimPants", "AND", 77, 40, 35, 1900,"S", "Blue");
+        		insert into women_instock values (1014, "DenimJacket", "WestSide", 85, 30, 20, 1500,"XL","White" );
+      		insert into women_instock values (1015, "DenimJacket", "H&M", 66, 50, 35, 2000,"L","Blue");
+        		insert into women_instock values (1016, "DenimJacket",  "VeroModa", 95, 30, 20, 2200,"M", "Black");
+        		insert into women_instock values (1017, "Trousers", "AND", 77, 20,10, 2000,"S","White");
+        		insert into women_instock values (1018, "Hoddie", "Levis",88, 30, 25, 1300,"XS","Burgandy");
+        		insert into women_instock values (1019, "Hoodie", "AND", 77, 20, 15, 1400, "M","Orange");
+        		insert into women_instock values (1020, "Dress", "WestSide", 85, 15,10,  3000,"L","Mustard');
+        		insert into women_instock values (1021, "Dress",  "VeroModa", 95, 25, 15, 4000,"M","NavyBlue");
+        		insert into women_instock values (1022, "Dress",  "VeroModa", 95, 25, 15, 3500,"L","Black");
+        		insert into women_instock values (1023, "Dress", "H&M", 66, 20, 15, 3000,"XL","Red");
+        		insert into women_instock values (1024, "Jacket", "Levis",88, 20, 20,  3000, "S","Brown");
+        		insert into women_instock values (1025, "Coat", "Levis",88, 15, 05, 5000,"M","Black");
+        
+    create table men_instock(item_no int primary key, item_name varchar(100) not null, brand_name varchar(100) not null, brandcode int not null, quantity int not null, cost float not null, material varchar(100) not null, size varchar(50) not null, color varchar(50) not null);  
+insert into men_instock values (2001,"Jeans" ,"Levis",88, 80, 45, 2500,"S","Blue");
+		insert into men_instock values (2002,"TShirt" ,"H&M",66, 50, 40, 1000,"M","Red");
+		insert into men_instock values (2003,"TShirt" ,"Jack&Jones",55, 30, 25, 1500,"S","Black");
+		insert into men_instock values (2004,"Jacket" ,"Mark&Spencer",44, 50, 45, 4000,"M","Brown");
+		insert into men_instock values (2005,"Jacket" ,"Levis",88, 45, 40, 2500,"L","Black");
+		insert into men_instock values (2006,"Hoodie" ,"Jack&Jones",55, 40, 35, 2000,"M","Green");
+		insert into men_instock values (2007,"Hoodie" ,"Mark&Spencer",44, 25, 20, 2000,"L","White");
+		insert into men_instock values (2008,"Jeans" ,"Spykar",58, 20, 10, 2000,"XL","Black");
+		insert into men_instock values (2009,"Coat" ,"Jack&Jones",55, 15, 10 5000,"L","Black");
+		insert into men_instock values (2010,"Sweatshirt" ,"Levis",88, 20, 10, 1500,"S","Brown");
+		insert into men_instock values (2011,"Sweatshirt" ,"H&M", 66, 20, 20, 1200,"M","Blue");
+		insert into men_instock values (2012,"Pullover" ,"Jack&Jones",55, 45, 30, 1800,"M","Green");
+		insert into men_instock values (2013,"Pullover" ,"Puma",22, 80, 20, 1900,"L","Black");
+		insert into men_instock values (2014,"Shirt" ,"Mark&Spencer",44, 60, 25, 1300,"M","Red");
+		insert into men_instock values (2015,"Shirt" ,"H&M",66, 50, 40, 1800,"S",White);
+		insert into men_instock values (2016,"Shirt" ,"Spykar",58, 45, 40, 1500,"L","Blue");
+		insert into men_instock values (2017,"Shirt" ,"Mark&Spencer",44, 70, 60, 2100,"XL","Brown");
+		insert into men_instock values (2018,"DenimJacket" ,"Mark&Spencer",44, 55, 45, 2000,"S","Blue");
+		insert into men_instock values (2019,"Trousers" ,"Puma",22, 80, 45, 1400,"M","Green");
+		insert into men_instock values (2020,"Trousers" ,"Jack&Jones",55, 60, 45, 1600,"L","Black");
+		insert into men_instock values (2021,"Hoddie" ,"Puma",22, 35, 25, 1500,"L","Yellow");
+		insert into men_instock values (2022,"Joggers" ,"Nike",25, 50, 30, 2400,"XL","Blue");
+		insert into men_instock values (2023,"Sweatpants" ,"Nike",25, 20, 15, 1500,"S","Black");
+		insert into men_instock values (2024,"Overshirt" ,"Spykar",58, 40, 30, 1100,"L","Blue");
+		insert into men_instock values (2025,"Joggers" ,"Puma",22, 60, 55, 900,"M","Green");
+   
+   
+    create table instore_sales_weekly ( from date primary key, to date not null, mensales float, womensales float, totalsales float, bestsellar_brand varchar(50), bestsellar_item varchar(50) );
+        insert into instore_sales_weekly values("1A", 2022-10-03,2022-10-08, 20000, 16000, 36000, "Jack&Jones", "Pullover" );
+        insert into instore_sales_weekly values("2A", 2022-10-10,2022-10-15, 45000, 41000, 86000, "H&M", "Hoodie" );
+        insert into instore_sales_weekly values("3A", 2022-10-17,2022-10-22, 35000, 45000, 80000, "VeroModa", "Dress" );
+        insert into instore_sales_weekly values("4A",2022-10-24,2022-10-29, 51000, 48000, 99000, "H&M", "Sweatshirt" );
+        insert into instore_sales_weekly values("5AB",2022-10-31,2022-11-05, 30000, 27000, 57000, "Jack&Jones", "Pullover" );
+        insert into instore_sales_weekly values("1B", 2022-11-07,2022-11-12, 40000, 40000, 80000, "Mark&Spencer", "Shirt" );
+        insert into instore_sales_weekly values("2B","2022-11-14,2022-11-19, 35000, 30000, 65000, "H&M", "Dress" );
+        insert into instore_sales_weekly values("3B", 2022-11-21,2022-11-26, 49000, 50000, 99000, "H&M", "Hoodie" );
+        insert into instore_sales_weekly values("4BC", 2022-11-28,2022-12-03, 27000, 17000, 44000, "Puma", "Joggers" );
+        insert into instore_sales_weekly values("1C", 2022-12-05,2022-12-10, 26000, 22000, 48000, "WestSide", "DenimJacket" );
+        insert into instore_sales_weekly values("2C",2022-12-12,2022-12-17, 18000, 18000, 36000, "Jack&Jones", "Pullover" );
+        insert into instore_sales_weekly values("3C", 2022-12-19,2022-12-24, 20000, 36000, 56000, "ZARA", "Cardigan" );
+        insert into instore_sales_weekly values("4C", 2022-12-26,2022-12-31, 12000, 18000, 30000, "H&M", "Dress" );
+    create table online_sales_weekly (week varchar(50) primary key, start date, end date, mensales float, womensales float, totalsales float, bestsellar_brand varchar(50), bestsellar_item varchar(50) )
+         insert into online_sales_weekly values("OA1","2022-10-03","2022-10-08", 30000, 20000, 50000, "Nike", "Sweatpants" );
+        insert into online_sales_weekly values("OA2","2022-10-10","2022-10-15", 40000, 48000, 88000, "H&M", "Dress" );
+        insert into online_sales_weekly values("OA3","2022-10-17","2022-10-22", 42000, 49000, 91000, "WestSide", "Dress" );
+        insert into online_sales_weekly values("OA4","2022-10-24","2022-10-29", 56000, 50000, 110000, "Spykar", "Jeans" );
+        insert into online_sales_weekly values("OAB5","2022-10-31","2022-11-05", 33000, 36000, 69000, "Forever21", "Shirt" );
+        insert into online_sales_weekly values("OB1","2022/11/07,2022/11/12, 50000, 44000, 94000, "Mark&Spencer", "Shirt" );
+        insert into online_sales_weekly values("OB2","2022-11-14","2022-11-19", 38000, 35000, 73000, "Puma", "Pullover" );
+        insert into online_sales_weekly values("OB3","2022-11-21","2022-11-26", 47000, 55000, 102000, "Levis", "Coat" );
+        insert into online_sales_weekly values("OBC4","2022-11-28","2022-12-03", 35000, 20000, 55000, "Jack&Jones", "Coat" );
+        insert into online_sales_weekly values("OC1","2022-12-05","2022-12-10", 36000, 25000, 61000, "Jakc&Jones", "Trousers" );
+        insert into online_sales_weekly values("OC2","2022-12-12","2022-12-17", 25000, 22000, 47000, "H&M", "Hoodie" );
+        insert into online_sales_weekly values("OC3","2022-12-19","2022-12-24", 30000, 35000, 65000, "VeroModa", "Cardigan" );
+        insert into online_sales_weekly values("OC4","2022-12-26","2022-12-31", 14000, 20000, 34000, "WestSide, "Skirt"); 
+        
+		
+		
+        
+		insert into women_instock values(1001, 'TShirt', 'H&M', 66, 15,10, 700, 'S', 'Red'), 
+	    insert into women_instock values (1002, 'Shirt', 'Forever21', 75, 20, 15, 850,'L', 'Orange'),
+        insert into women_instock values (1003, 'Cardigan', 'ZARA', 80, 15, 10, 900, 'L', 'Black'),
+        insert into women_instock values (1004, 'Sweatshirt', 'H&M', 66, 40,30, 1000,'M', 'Red'),
+        insert into women_instock values (1005, 'Sweatshirt', 'ZARA', 80, 40, 20, 1200,'XL', 'Black'),
+        insert into women_instock values (1006, 'Pullover', 'VeroModa', 95, 25,20, 1000,'M', 'Blue' ),
+        insert into women_instock values (1007, 'Hoodie', 'Forever21', 75, 15, 15, 700,'S', 'Red'),
+        insert into women_instock values (1008, 'Cardigan',  'VeroModa', 95, 35, 30, 800, 'XS','Mustard'),
+        insert into women_instock values (1009, 'Skirt', 'WestSide', 85, 15, 10, 1500,'M','Olive'),
+        insert into women_instock values (1010, 'Skirt', 'H&M', 66, 20, 15, 1800,'L', 'Burgandy'),
+        insert into women_instock values (1011, 'Trousers',  'VeroModa', 95, 20, 15, 2500,'XL', 'NavyBlue'),
+        insert into women_instock values (1012, 'Pants', 'WestSide', 85, 45, 30, 2000, 'L', 'Black'),
+        insert into women_instock values (1013, 'DenimPants', 'AND', 77, 40, 35, 1900,'S', 'Blue'),
+        insert into women_instock values (1014, 'DenimJacket', 'WestSide', 85, 30, 20, 1500,'XL','White' ),
+        insert into women_instock values (1015, 'DenimJacket', 'H&M', 66, 50, 35, 2000,'L','Blue'),
+        insert into women_instock values (1016, 'DenimJacket',  'VeroModa', 95, 30, 20, 2200,'M', 'Black'),
+        insert into women_instock values (1017, 'Trousers', 'AND', 77, 20,10, 2000,'S','White'),
+        insert into women_instock values (1018, 'Hoddie', 'Levis',88, 30, 25, 1300,'XS','Burgandy'),
+        insert into women_instock values (1019, 'Hoodie', 'AND', 77, 20, 15, 1400, 'M','Orange'),
+        insert into women_instock values (1020, 'Dress', 'WestSide', 85, 15,10,  3000,'L','Mustard'),
+        insert into women_instock values (1021, 'Dress',  'VeroModa', 95, 25, 15, 4000,'M','NavyBlue'),
+        insert into women_instock values (1022, 'Dress',  'VeroModa', 95, 25, 15, 3500,'L','Black'),
+        insert into women_instock values (1023, 'Dress', 'H&M', 66,, 20, 15, 3000,'XL','Red'),
+        insert into women_instock values (1024, 'Jacket', 'Levis',88, 20, 20,  3000, 'S','Brown'),
+        insert into women_instock values (1025, 'Coat', 'Levis',88, 15, 05, 5000,'M','Black');
+        
+    create table men_instock(item_no int primary key, item_name varchar(100) not null, brand_name varchar(100) not null, brandcode int not null, quantity int not null, cost float not null, material varchar(100) not null, size varchar(50) not null, color varchar(50) not null);  
+		insert into men_instock values (2001,"Jeans" ,"Levis",88, 80, 45, 2500,"S","Blue");
+		insert into men_instock values (2002,"TShirt" ,"H&M",66, 50, 40, 1000,"M","Red");
+		insert into men_instock values (2003,"TShirt" ,"Jack&Jones",55, 30, 25, 1500,"S","Black");
+		insert into men_instock values (2004,"Jacket" ,"Mark&Spencer",44, 50, 45, 4000,"M","Brown");
+		insert into men_instock values (2005,"Jacket" ,"Levis",88, 45, 40, 2500,"L","Black");
+		insert into men_instock values (2006,"Hoodie" ,"Jack&Jones",55, 40, 35, 2000,"M","Green");
+		insert into men_instock values (2007,"Hoodie" ,"Mark&Spencer",44, 25, 20, 2000,"L","White");
+		insert into men_instock values (2008,"Jeans" ,"Spykar",58, 20, 10, 2000,"XL","Black");
+		insert into men_instock values (2009,"Coat" ,"Jack&Jones",55, 15, 10 5000,"L","Black");
+		insert into men_instock values (2010,"Sweatshirt" ,"Levis",88, 20, 10, 1500,"S","Brown");
+		insert into men_instock values (2011,"Sweatshirt" ,"H&M", 66, 20, 20, 1200,"M","Blue");
+		insert into men_instock values (2012,"Pullover" ,"Jack&Jones",55, 45, 30, 1800,"M","Green");
+		insert into men_instock values (2013,"Pullover" ,"Puma",22, 80, 20, 1900,"L","Black");
+		insert into men_instock values (2014,"Shirt" ,"Mark&Spencer",44, 60, 25, 1300,"M","Red");
+		insert into men_instock values (2015,"Shirt" ,"H&M",66, 50, 40, 1800,"S",White);
+		insert into men_instock values (2016,"Shirt" ,"Spykar",58, 45, 40, 1500,"L","Blue");
+		insert into men_instock values (2017,"Shirt" ,"Mark&Spencer",44, 70, 60, 2100,"XL","Brown");
+		insert into men_instock values (2018,"DenimJacket" ,"Mark&Spencer",44, 55, 45, 2000,"S","Blue");
+		insert into men_instock values (2019,"Trousers" ,"Puma",22, 80, 45, 1400,"M","Green");
+		insert into men_instock values (2020,"Trousers" ,"Jack&Jones",55, 60, 45, 1600,"L","Black");
+		insert into men_instock values (2021,"Hoddie" ,"Puma",22, 35, 25, 1500,"L","Yellow");
+		insert into men_instock values (2022,"Joggers" ,"Nike",25, 50, 30, 2400,"XL","Blue");
+		insert into men_instock values (2023,"Sweatpants" ,"Nike",25, 20, 15, 1500,"S","Black");
+		insert into men_instock values (2024,"Overshirt" ,"Spykar",58, 40, 30, 1100,"L","Blue");
+		insert into men_instock values (2025,"Joggers" ,"Puma",22, 60, 55, 900,"M","Green");
+   
+   
+    create table instore_sales_weekly ( from date primary key, to date not null, mensales float, womensales float, totalsales float, bestsellar_brand varchar(50), bestsellar_item varchar(50) );
+        insert into instore_sales_weekly values(2022/10/03,2022/10/08, 20000, 16000, 36000, "Jack&Jones", "Pullover" );
+        insert into instore_sales_weekly values(2022/10/10,2022/10/15, 45000, 41000, 86000, "H&M", "Hoodie" );
+        insert into instore_sales_weekly values(2022/10/17,2022/10/22, 35000, 45000, 80000, "VeroModa", "Dress" );
+        insert into instore_sales_weekly values(2022/10/24,2022/10/29, 51000, 48000, 99000, "H&M", "Sweatshirt" );
+        insert into instore_sales_weekly values(2022/10/31,2022/11/05, 30000, 27000, 57000, "Jack&Jones", "Pullover" );
+        insert into instore_sales_weekly values(2022/11/07,2022/11/12, 40000, 40000, 80000, "Mark&Spencer", "Shirt" );
+        insert into instore_sales_weekly values(2022/11/14,2022/11/19, 35000, 30000, 65000, "H&M", "Dress" );
+        insert into instore_sales_weekly values(2022/11/21,2022/11/26, 49000, 50000, 99000, "H&M", "Hoodie" );
+        insert into instore_sales_weekly values(2022/11/28,2022/12/03, 27000, 17000, 44000, "Puma", "Joggers" );
+        insert into instore_sales_weekly values(2022/12/05,2022/12/10, 26000, 22000, 48000, "WestSide", "DenimJacket" );
+        insert into instore_sales_weekly values(2022/12/12,2022/12/17, 18000, 18000, 36000, "Jack&Jones", "Pullover" );
+        insert into instore_sales_weekly values(2022/12/19,2022/12/24, 20000, 36000, 56000, "ZARA", "Cardigan" );
+        insert into instore_sales_weekly values(2022/12/26,2022/12/31, 12000, 18000, 30000, "H&M", "Dress" );
+    create table online_sales_weekly ( from date primary key, to date not null, mensales float, womensales float, totalsales float, bestsellar_brand varchar(50), bestsellar_item varchar(50) )
+         insert into online_sales_weekly values(2022/10/03,2022/10/08, 30000, 20000, 50000, "Nike", "Sweatpants" );
+        insert into online_sales_weekly values(2022/10/10,2022/10/15, 40000, 48000, 88000, "H&M", "Dress" );
+        insert into online_sales_weekly values(2022/10/17,2022/10/22, 42000, 49000, 91000, "WestSide", "Dress" );
+        insert into online_sales_weekly values(2022/10/24,2022/10/29, 56000, 50000, 110000, "Spykar", "Jeans" );
+        insert into online_sales_weekly values(2022/10/31,2022/11/05, 33000, 36000, 69000, "Forever21", "Shirt" );
+        insert into online_sales_weekly values(2022/11/07,2022/11/12, 50000, 44000, 94000, "Mark&Spencer", "Shirt" );
+        insert into online_sales_weekly values(2022/11/14,2022/11/19, 38000, 35000, 73000, "Puma", "Pullover" );
+        insert into online_sales_weekly values(2022/11/21,2022/11/26, 47000, 55000, 102000, "Levis", "Coat" );
+        insert into online_sales_weekly values(2022/11/28,2022/12/03, 35000, 20000, 55000, "Jack&Jones", "Coat" );
+        insert into online_sales_weekly values(2022/12/05,2022/12/10, 36000, 25000, 61000, "Jakc&Jones", "Trousers" );
+        insert into online_sales_weekly values(2022/12/12,2022/12/17, 25000, 22000, 47000, "H&M", "Hoodie" );
+        insert into online_sales_weekly values(2022/12/19,2022/12/24, 30000, 35000, 65000, "VeroModa", "Cardigan" );
+        insert into online_sales_weekly values(2022/12/26,2022/12/31, 14000, 20000, 34000, "WestSide, "Skirt"); 
+        
+		
+		
+        
